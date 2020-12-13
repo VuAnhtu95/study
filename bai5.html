@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemkiemtra = parseInt(prompt("Nhập vào số điểm kiểm tra"))
+    let diemgiuaky = parseInt(prompt("Nhập vào số điểm giữa kỳ"))
+    let diemcuoiky = parseInt(prompt("Nhập vào số điểm cuối kỳ"))
+    let tongdiem = (diemkiemtra * 2) + (diemgiuaky * 3) + (diemcuoiky*3)
+    let trungbinh = tongdiem/8
+    if (trungbinh >= 8 && trungbinh < 10){
+        alert("Học sinh giỏi")
+    }
+    else
+        if (trungbinh < 8 && trungbinh >= 6){
+            alert("Học sinh tiên tiến")
+        }
+        else
+            if (trungbinh<6 && trungbinh>=5){
+                alert("Học sinh trung bình")
+            }
+            else
+                if (trungbinh<5){
+                    alert("Ngu quá học lại thôi")
+                }
+                else
+                    if (trungbinh > 10){
+                        alert("mày thích khai láo không ? đập chết mẹ mày giờ ?")
+                    }
+
+</script>
+</body>
+</html>
